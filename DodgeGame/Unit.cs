@@ -36,18 +36,19 @@ namespace DodgeGame
 			_unitGraphic = UnitGraphic;
 		}
 
-		public void Draw()
+		virtual public void Update()
 		{
 			
-			Console.SetCursorPosition(X, Y);
-			Console.WriteLine(UnitGraphic);
+
 		}
-		public bool moveTo(int x, int y)
+
+		public void Draw()
 		{
-			this.X = x;
-			this.Y = y;
-			return true;
+			Console.Clear();
+			Console.SetCursorPosition(this.X, this.Y);
+			Console.Write(this.UnitGraphic);
 		}
+
 	}
 }
 

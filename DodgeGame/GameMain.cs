@@ -9,10 +9,13 @@ namespace DodgeGame
 		{
 			Console.ForegroundColor = ConsoleColor.White;
 			Console.BackgroundColor = ConsoleColor.Black;
-			while (RunGame())
+			Console.CursorVisible = false;
+			/*while (RunGame())
 			{
+				
+			}*/
 
-			}
+			RunGame();
 
 			Console.ResetColor();
 			Console.Clear();
@@ -22,18 +25,13 @@ namespace DodgeGame
 			Console.SetCursorPosition(0, Console.WindowHeight);
 		}
 
-		static bool RunGame()
+		static void RunGame()
 		{
-			Console.CursorVisible = false;
+			
 
 			Game game = new Game();
 			game.Run();
 
-			while (game.Update())
-			{
-				Thread.Sleep(10);
-			}
-			return game.Restart;
 		}
 	}
 }
