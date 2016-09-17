@@ -21,7 +21,7 @@ namespace DodgeGame
 				
 				playerUnit.Update();
 				playerUnit.Draw();
-				//Thread.Sleep(10);
+				Thread.Sleep(15);
 			}
 			 
 
