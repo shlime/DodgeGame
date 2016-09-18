@@ -21,17 +21,17 @@ namespace DodgeGame
 		public void Run()
 		{
 			
-			while (true)
+			while (!gameOver)
 			{
 				
 				playerUnit.Update();
-
-				playerUnit.Draw();
 				AI.Update();
+				playerUnit.Draw();
+
 				Console.SetCursorPosition(0, Console.WindowHeight - 1);
 				Console.WriteLine("X: {0} || Y: {1}", playerUnit.X, playerUnit.Y);
 				Console.WriteLine(AIManager.EnemyList.Count);
-				Console.Write(gameOver.ToString());
+				Console.Write(gameOver);
 				//Console.WriteLine("X: {0} || Y: {1}", e.X, e.Y);
 
 				Thread.Sleep(25);

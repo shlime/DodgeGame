@@ -19,18 +19,19 @@ namespace DodgeGame
 
 		public void Update()
 		{
-			//	LETS DO AI things HERE.
-			while (Game.instance.gameOver == false)
+			if (i <= 0)
 			{
-				if (i <= 0)
-				{
-					i = 2;
-					EnemyUnit _e = new EnemyUnit(random.Next(0, Console.WindowWidth-1),1,"-");
-					EnemyList.Add(_e);
+				i = 2;
+				EnemyUnit _e = new EnemyUnit(random.Next(0, Console.WindowWidth - 1), 1, "-");
+				EnemyList.Add(_e);
 
-				}
 			}
 
+			for (int i = 0; i < EnemyList.Count; i++)
+			{
+				//EnemyList[i].Update();
+				EnemyList[i].Draw();
+			}
 		}
 
 		public void AIA(object sender, ElapsedEventArgs e)
