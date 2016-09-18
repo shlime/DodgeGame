@@ -37,6 +37,8 @@
     <Compile Include="Game.cs" />
     <Compile Include="Unit.cs" />
     <Compile Include="PlayerUnit.cs" />
+    <Compile Include="EnemyUnit.cs" />
+    <Compile Include="AIManager.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
 </Project>

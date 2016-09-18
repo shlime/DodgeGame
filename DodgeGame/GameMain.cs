@@ -22,7 +22,6 @@ namespace DodgeGame
 
 			//	SET the position of the cursor to the
 			//	right place.
-			Console.SetCursorPosition(0, Console.WindowHeight);
 		}
 
 		static void RunGame()

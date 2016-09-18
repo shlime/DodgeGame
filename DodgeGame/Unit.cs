@@ -28,6 +28,11 @@ namespace DodgeGame
 		}
 		private string _unitGraphic;
 
+		public Unit()
+		{
+		}
+
+
 		public Unit( int x, int y, string UnitGraphic = "@")
 		{
 			X = x;

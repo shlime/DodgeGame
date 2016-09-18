@@ -5,12 +5,14 @@
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MonoDevelop.Ide.ItemProperties.DodgeGame PreferredExecutionTarget="MonoDevelop.Default" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Game.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="AIManager.cs">
     <Files>
-      <File FileName="Game.cs" Line="13" Column="3" />
-      <File FileName="PlayerUnit.cs" Line="15" Column="4" />
-      <File FileName="Unit.cs" Line="1" Column="1" />
-      <File FileName="GameMain.cs" Line="1" Column="1" />
+      <File FileName="Game.cs" Line="34" Column="39" />
+      <File FileName="PlayerUnit.cs" Line="29" Column="15" />
+      <File FileName="Unit.cs" Line="53" Column="26" />
+      <File FileName="GameMain.cs" Line="8" Column="21" />
+      <File FileName="EnemyUnit.cs" Line="28" Column="5" />
+      <File FileName="AIManager.cs" Line="20" Column="23" />
     </Files>
   </MonoDevelop.Ide.Workbench>
 </Properties>
