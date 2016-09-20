@@ -24,22 +24,13 @@ namespace DodgeGame
 		override public void Update()
 		{
 			//	LETS DO AI things HERE.
-			while (!Game.instance.gameOver)
+			if (this.Y >= Console.WindowHeight - 1)
 			{
-
-				if (this.X >= Console.WindowWidth - 1)
-				{
-					this.X = random.Next(0, Console.WindowWidth);
-				}
-				if (this.Y >= Console.WindowHeight - 1)
-				{
-					this.Y = 0;
-					this.X = random.Next(0, Console.WindowWidth);
-				}
-
+				this.Y = 0;
+				this.X = random.Next(0, Console.WindowWidth);
 			}
 
-
+			this.Y++;
 		}
 
 	}

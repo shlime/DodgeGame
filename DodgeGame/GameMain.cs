@@ -10,15 +10,11 @@ namespace DodgeGame
 			Console.ForegroundColor = ConsoleColor.White;
 			Console.BackgroundColor = ConsoleColor.Black;
 			Console.CursorVisible = false;
-			/*while (RunGame())
-			{
-				
-			}*/
 
 			RunGame();
 
 			Console.ResetColor();
-			Console.Clear();
+			//Console.Clear();
 
 			//	SET the position of the cursor to the
 			//	right place.

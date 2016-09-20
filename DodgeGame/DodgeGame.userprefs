@@ -1,18 +1,18 @@
-﻿<Properties StartupItem="DodgeGame.csproj">
+﻿<Properties StartupConfiguration="{610BF106-3B20-4986-A746-73472256BC46}|Default">
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|x86" />
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MonoDevelop.Ide.ItemProperties.DodgeGame PreferredExecutionTarget="MonoDevelop.Default" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="AIManager.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="GameMain.cs">
     <Files>
-      <File FileName="Game.cs" Line="34" Column="39" />
+      <File FileName="Game.cs" Line="37" Column="5" />
       <File FileName="PlayerUnit.cs" Line="29" Column="15" />
-      <File FileName="Unit.cs" Line="53" Column="26" />
-      <File FileName="GameMain.cs" Line="8" Column="21" />
-      <File FileName="EnemyUnit.cs" Line="28" Column="5" />
-      <File FileName="AIManager.cs" Line="20" Column="23" />
+      <File FileName="Unit.cs" Line="54" Column="1" />
+      <File FileName="GameMain.cs" Line="17" Column="4" />
+      <File FileName="EnemyUnit.cs" Line="39" Column="5" />
+      <File FileName="AIManager.cs" Line="21" Column="4" />
     </Files>
   </MonoDevelop.Ide.Workbench>
 </Properties>

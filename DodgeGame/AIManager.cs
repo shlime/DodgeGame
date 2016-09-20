@@ -21,17 +21,12 @@ namespace DodgeGame
 		{
 			if (i <= 0)
 			{
-				i = 2;
-				EnemyUnit _e = new EnemyUnit(random.Next(0, Console.WindowWidth - 1), 1, "-");
+				i = 1;
+				EnemyUnit _e = new EnemyUnit(random.Next(0, Console.WindowWidth - 1), 0, "O");
 				EnemyList.Add(_e);
 
 			}
 
-			for (int i = 0; i < EnemyList.Count; i++)
-			{
-				//EnemyList[i].Update();
-				EnemyList[i].Draw();
-			}
 		}
 
 		public void AIA(object sender, ElapsedEventArgs e)

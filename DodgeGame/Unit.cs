@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Threading;
 namespace DodgeGame
 {
 	public class Unit
@@ -7,7 +8,9 @@ namespace DodgeGame
 		{
 			get { return _x; } 
 			set{
+				UnDraw();
 				_x = value;
+
 			}
 		}
 		public int Y
@@ -15,6 +18,7 @@ namespace DodgeGame
 			get { return _y; }
 			set
 			{
+				UnDraw();
 				_y = value;
 			}
 		}
@@ -43,15 +47,20 @@ namespace DodgeGame
 
 		virtual public void Update()
 		{
-			
 
 		}
 
 		public void Draw()
 		{
-			Console.Clear();
+			
 			Console.SetCursorPosition(this.X, this.Y);
 			Console.Write(this.UnitGraphic);
+		}
+
+		public void UnDraw()
+		{
+			Console.SetCursorPosition(this.X, this.Y);
+			Console.Write( ' ' );	
 		}
 
 	}

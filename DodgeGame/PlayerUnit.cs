@@ -37,11 +37,27 @@ namespace DodgeGame
 						break;
 				}
 			}
-
-
-
+			IsColldingToTheEnemy();
 
 			base.Update();
+		}
+
+
+		bool IsColldingToTheEnemy()
+		{
+			bool val = false;
+
+			foreach (EnemyUnit e in AIManager.EnemyList)
+			{
+				if (this.X == e.X && this.Y == e.Y)
+				{
+					val = true;
+					Game.gameOver = val;
+				}				
+			}
+
+
+			return val;
 		}
 	}
 }
